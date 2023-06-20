@@ -71,13 +71,16 @@ a{
     margin-left: auto;
     margin-right: auto;
 }
-li {
-    display: inline-block;
+.card-footer {
+    background-color: unset;
+    color: orangered;
+    width: 400px;
 }
-.redes {
+.title-fo {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+}
+.img-footer {
+    margin-left: 70px;
 }
 /* BIOGRAFIA HTML */
 .titulo {
