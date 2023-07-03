@@ -1,0 +1,54 @@
+.titulo {
+  margin-top: 40px;
+  text-align: center;
+  color: orangered;
+  text-decoration: overline;
+  font-size: 60px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.back:hover {
+  color: orangered;
+}
+
+.text-sporting {
+  text-align: center;
+  margin-right: 60px;
+  color: white;
+  font-size: 23px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.text-united {
+  text-align: center;
+  margin-right: 60px;
+  color: white;
+  font-size: 23px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.text-madrid {
+  text-align: center;
+  margin-right: 60px;
+  color: white;
+  font-size: 23px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.text-juve {
+  text-align: center;
+  margin-right: 60px;
+  color: white;
+  font-size: 23px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.text-portugal {
+  text-align: center;
+  margin-right: 60px;
+  color: white;
+  font-size: 23px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+/*# sourceMappingURL=career-equipos.css.map */

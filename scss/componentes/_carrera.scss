@@ -1,0 +1,33 @@
+.titulo {
+    margin-top: 40px;
+    text-align: center;
+    color: orangered;
+    text-decoration: overline;
+    font-size: 60px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.card_career {
+    width: 80%;
+}
+.card_career2 {
+    width: 60%;
+}
+.title_career {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color: orangered;
+}
+.text_card {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+}
+.btn_card:hover {
+    background-color: orangered;
+}
+.btn_card {
+    text-decoration: none;
+    border: none;
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+}
