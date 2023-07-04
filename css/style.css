@@ -1,5 +1,16 @@
+@media (max-width: 600px) {
+  .linea {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 100px;
+  }
+}
 header img {
   width: 100%;
+}
+
+.color-nav {
+  color: none;
 }
 
 .nav-container {
@@ -19,7 +30,6 @@ nav ul li a {
   position: relative;
   text-align: center;
 }
-
 .img-position img {
   display: block;
   max-width: 100%;
@@ -51,8 +61,11 @@ nav ul li a {
 }
 
 .linea {
-  color: orangered;
-  font-size: 700%;
+  width: 100%;
+  height: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: orangered;
 }
 
 .video_siu {
