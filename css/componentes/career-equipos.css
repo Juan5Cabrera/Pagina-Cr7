@@ -1,54 +1,17 @@
-.titulo {
-  margin-top: 40px;
-  text-align: center;
-  color: orangered;
-  text-decoration: overline;
-  font-size: 60px;
-  font-family: "Bebas Neue", sans-serif;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 6 |     color: $color-ppl;
+ *   |            ^^^^^^^^^^
+ *   '
+ *   scss\componentes\career-equipos.scss 6:12  root stylesheet */
 
-.back:hover {
-  color: orangered;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 6 \2502      color: $color-ppl;\d\a   \2502             ^^^^^^^^^^\a   \2575 \a   scss\\componentes\\career-equipos.scss 6:12  root stylesheet";
 }
-
-.text-sporting {
-  text-align: center;
-  margin-right: 60px;
-  color: white;
-  font-size: 23px;
-  font-family: "Barlow Semi Condensed", sans-serif;
-}
-
-.text-united {
-  text-align: center;
-  margin-right: 60px;
-  color: white;
-  font-size: 23px;
-  font-family: "Barlow Semi Condensed", sans-serif;
-}
-
-.text-madrid {
-  text-align: center;
-  margin-right: 60px;
-  color: white;
-  font-size: 23px;
-  font-family: "Barlow Semi Condensed", sans-serif;
-}
-
-.text-juve {
-  text-align: center;
-  margin-right: 60px;
-  color: white;
-  font-size: 23px;
-  font-family: "Barlow Semi Condensed", sans-serif;
-}
-
-.text-portugal {
-  text-align: center;
-  margin-right: 60px;
-  color: white;
-  font-size: 23px;
-  font-family: "Barlow Semi Condensed", sans-serif;
-}
-
-/*# sourceMappingURL=career-equipos.css.map */

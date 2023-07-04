@@ -1,27 +1,27 @@
 .linea {
-    width: 100%;
-    height: 5px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    background-color: orangered;
+    width: map-get($linea, tamaño);
+    height: map-get($linea, altura);
+    margin-top: map-get($linea, mrg-t);
+    margin-bottom: map-get($linea, mrg-b);
+    background-color: $color-ppl;
 }
 .video_siu {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: $auto;
+    margin-right: $auto;
 }
 li {
-    display: inline-block;
+    display: $inline;
 }
 .redes {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-.card-footer{
-    align-items: center;
+    text-align: $centrado;
+    margin-left: $auto;
+    margin-right: $auto;
 }
 .title-fo{
-    color: orangered;
+    color: $color-ppl;
+}
+.card-footer{
+    text-align: $centrado;
 }
 
   

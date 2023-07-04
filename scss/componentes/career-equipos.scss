@@ -1,46 +1,22 @@
 .titulo {
-    margin-top: 40px;
-    text-align: center;
-    color: orangered;
-    text-decoration: overline;
-    font-size: 60px;
-    font-family: 'Bebas Neue', sans-serif;
+    @extend %titulos;
 }
+
 .back:hover {
-    color: orangered;
+    color: $color-ppl;
 }
 .text-sporting {
-    text-align: center;
-    margin-right: 60px;
-    color: white;
-    font-size: 23px;
-    font-family: 'Barlow Semi Condensed', sans-serif;   
+    @extend %text-career;
 }
 .text-united {
-    text-align: center;
-    margin-right: 60px;
-    color: white;
-    font-size: 23px;
-    font-family: 'Barlow Semi Condensed', sans-serif;     
+    @extend %text-career;
 }
 .text-madrid {
-    text-align: center;
-    margin-right: 60px;
-    color: white;
-    font-size: 23px;
-    font-family: 'Barlow Semi Condensed', sans-serif;    
+    @extend %text-career;  
 }
 .text-juve {
-    text-align: center;
-    margin-right: 60px;
-    color: white;
-    font-size: 23px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    @extend %text-career;
 }
 .text-portugal {
-    text-align: center;
-    margin-right: 60px;
-    color: white;
-    font-size: 23px;
-    font-family: 'Barlow Semi Condensed', sans-serif;   
+    @extend %text-career; 
 }

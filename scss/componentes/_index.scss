@@ -2,11 +2,11 @@
 //HOME IMG/TEXT
 .img-position{
     position: relative;
-    text-align: center;
+    text-align: $centrado;
         img{
             display: block;
             max-width: 100%;
-            height: auto;
+            height: $auto;
             opacity: 50%;
         }
 }
@@ -20,15 +20,13 @@
 
 //DISEÑOS TEXTOS
 .text_bio2:hover, .text_carrera2:hover, .text_titulos2:hover, .text_records2:hover{
-    color: orangered;
+    color: $color-ppl;
 }
+
+//MIXIN
 .text_bio , .text_carrera, .text_titulos, .text_records{
-    font-size: 50px;
-    font-family: 'Oswald', sans-serif;
-    color: white;
+    @include text-i(white, 50px, 'Oswald', sans-serif);
 }
 .text_bio2, .text_carrera2, .text_titulos2, .text_records2{
-    color: white;
-    font-size: 20px;
-    font-family: 'Josefin Slab', serif;
+    @include text-i(white, 20px, 'Josefin Slab', serif)
 }

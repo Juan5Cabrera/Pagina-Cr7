@@ -1,0 +1,7 @@
+@mixin text-i($color, $f-size, $f-fam, $f-serif) {
+    color: $color;
+    font-size: $f-size;
+    font-family: $f-fam;
+    font-weight: $f-serif;
+}
+

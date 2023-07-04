@@ -1,26 +1,17 @@
 .titulo {
-    margin-top: 40px;
-    text-align: center;
-    color: orangered;
-    text-decoration: overline;
-    font-size: 60px;
-    font-family: 'Bebas Neue', sans-serif;
+    @extend %titulos;
 }
 .card-title {
     background-color: unset;
     margin-top: 40px;
 }
 .title-title {
-    color: orangered;
-    text-align: center;
-    text-decoration: overline;
-    font-size: 60px;
-    font-family: 'Bebas Neue', sans-serif;
+    text-align: $centrado;
+    text-decoration: $decoration;
+    @include text-i(orangered, 60px, 'Bebas Neue', sans-serif);
 }
 .text-title {
-    text-align: center;
+    text-align: $centrado;
     margin-right: 60px;
-    color: white;
-    font-size: 23px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    @include text-i(white, 23px, 'Barlow Semi Condensed', sans-serif);
 }

@@ -1,3 +1,20 @@
+.titulo {
+  margin-top: 40px;
+  text-align: center;
+  color: orangered;
+  text-decoration: overline;
+  font-size: 60px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.text-portugal, .text-juve, .text-madrid, .text-united, .text-sporting {
+  text-align: center;
+  margin-right: 60px;
+  color: white;
+  font-size: 23px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
 @media (max-width: 600px) {
   .linea {
     margin-top: 20px;
@@ -49,15 +66,17 @@ nav ul li a {
 }
 
 .text_bio, .text_carrera, .text_titulos, .text_records {
-  font-size: 50px;
-  font-family: "Oswald", sans-serif;
   color: white;
+  font-size: 50px;
+  font-family: "Oswald";
+  font-weight: sans-serif;
 }
 
 .text_bio2, .text_carrera2, .text_titulos2, .text_records2 {
   color: white;
   font-size: 20px;
-  font-family: "Josefin Slab", serif;
+  font-family: "Josefin Slab";
+  font-weight: serif;
 }
 
 .linea {
@@ -83,21 +102,12 @@ li {
   margin-right: auto;
 }
 
-.card-footer {
-  align-items: center;
-}
-
 .title-fo {
   color: orangered;
 }
 
-.titulo {
-  margin-top: 40px;
+.card-footer {
   text-align: center;
-  color: orangered;
-  text-decoration: overline;
-  font-size: 60px;
-  font-family: "Bebas Neue", sans-serif;
 }
 
 .carru_bio {
@@ -106,21 +116,12 @@ li {
 }
 
 .biografia_parrafo {
-  color: rgba(255, 255, 255, 0.747);
   text-align: center;
   margin-top: 35px;
-  font-family: "Antic Slab", serif;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  color: rgba(255, 255, 255, 0.747);
   font-size: 18px;
-}
-
-.titulo {
-  margin-top: 40px;
-  text-align: center;
-  color: orangered;
-  text-decoration: overline;
-  font-size: 60px;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Barlow Semi Condensed";
+  font-weight: sans-serif;
 }
 
 .card_career {
@@ -131,11 +132,17 @@ li {
   width: 60%;
 }
 
+.card {
+  display: inline-block;
+  margin: 10px;
+}
+
 .title_career {
   text-align: center;
-  font-family: "Oswald", sans-serif;
-  font-size: 30px;
   color: orangered;
+  font-size: 30px;
+  font-family: "Oswald";
+  font-weight: sans-serif;
 }
 
 .text_card {
@@ -154,26 +161,18 @@ li {
   font-family: "Oswald", sans-serif;
 }
 
-.titulo {
-  margin-top: 40px;
-  text-align: center;
-  color: orangered;
-  text-decoration: overline;
-  font-size: 60px;
-  font-family: "Bebas Neue", sans-serif;
-}
-
 .card-title {
   background-color: unset;
   margin-top: 40px;
 }
 
 .title-title {
-  color: orangered;
   text-align: center;
   text-decoration: overline;
+  color: orangered;
   font-size: 60px;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue";
+  font-weight: sans-serif;
 }
 
 .text-title {
@@ -181,60 +180,12 @@ li {
   margin-right: 60px;
   color: white;
   font-size: 23px;
-  font-family: "Barlow Semi Condensed", sans-serif;
-}
-
-.titulo {
-  margin-top: 40px;
-  text-align: center;
-  color: orangered;
-  text-decoration: overline;
-  font-size: 60px;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Barlow Semi Condensed";
+  font-weight: sans-serif;
 }
 
 .back:hover {
   color: orangered;
-}
-
-.text-sporting {
-  text-align: center;
-  margin-right: 60px;
-  color: white;
-  font-size: 23px;
-  font-family: "Barlow Semi Condensed", sans-serif;
-}
-
-.text-united {
-  text-align: center;
-  margin-right: 60px;
-  color: white;
-  font-size: 23px;
-  font-family: "Barlow Semi Condensed", sans-serif;
-}
-
-.text-madrid {
-  text-align: center;
-  margin-right: 60px;
-  color: white;
-  font-size: 23px;
-  font-family: "Barlow Semi Condensed", sans-serif;
-}
-
-.text-juve {
-  text-align: center;
-  margin-right: 60px;
-  color: white;
-  font-size: 23px;
-  font-family: "Barlow Semi Condensed", sans-serif;
-}
-
-.text-portugal {
-  text-align: center;
-  margin-right: 60px;
-  color: white;
-  font-size: 23px;
-  font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 html {

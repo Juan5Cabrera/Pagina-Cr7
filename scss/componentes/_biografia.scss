@@ -1,20 +1,12 @@
 .titulo {
-    margin-top: 40px;
-    text-align: center;
-    color: orangered;
-    text-decoration: overline;
-    font-size: 60px;
-    font-family: 'Bebas Neue', sans-serif;
+    @extend %titulos;
 }
 .carru_bio {
     display: block;
-    margin: auto;
+    margin: $auto;
 }
 .biografia_parrafo {
-    color: rgba(255, 255, 255, 0.747);
-    text-align: center;
+    text-align: $centrado;
     margin-top: 35px;
-    font-family: 'Antic Slab', serif;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 18px;
+    @include text-i(rgba(255, 255, 255, 0.747), 18px, 'Barlow Semi Condensed', sans-serif);
 }

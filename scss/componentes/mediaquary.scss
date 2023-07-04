@@ -1,7 +1,8 @@
+
 @media (max-width: 600px){
     .linea{
-        margin-top: 20px;
-        margin-bottom: 10px;
-        height: 100px;
+        margin-top: map-get($mrgs, mrg-t);
+        margin-bottom: map-get($mrgs, mrg-b);
+        height: map-get($mrgs, altura);
     }
 }

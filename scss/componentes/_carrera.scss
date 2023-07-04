@@ -1,29 +1,30 @@
 .titulo {
-    margin-top: 40px;
-    text-align: center;
-    color: orangered;
-    text-decoration: overline;
-    font-size: 60px;
-    font-family: 'Bebas Neue', sans-serif;
+    @extend %titulos;
 }
+
 .card_career {
     width: 80%;
 }
+
 .card_career2 {
     width: 60%;
 }
+
+.card {
+    display: $inline;
+    margin: 10px;
+}
+
 .title_career {
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
-    color: orangered;
+    text-align: $centrado;
+    @include text-i(orangered, 30px, 'Oswald', sans-serif);
 }
 .text_card {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 20px;
 }
 .btn_card:hover {
-    background-color: orangered;
+    background-color: $color-ppl;
 }
 .btn_card {
     text-decoration: none;
@@ -31,3 +32,4 @@
     background-color: black;
     font-family: 'Oswald', sans-serif;
 }
+
