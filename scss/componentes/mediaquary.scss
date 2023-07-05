@@ -6,3 +6,8 @@
         height: map-get($mrgs, altura);
     }
 }
+@media (max-width: 600px){
+    .banner_header{
+        width: 100%;
+    }
+}

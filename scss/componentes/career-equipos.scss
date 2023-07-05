@@ -1,12 +1,8 @@
 .titulo {
     @extend %titulos;
 }
-
 .back:hover {
     color: $color-ppl;
-}
-.text-sporting {
-    @extend %text-career;
 }
 .text-united {
     @extend %text-career;

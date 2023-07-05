@@ -3,6 +3,7 @@
 @import './abstract/maps';
 @import './abstract/extend';
 
+@import './componentes/transition.scss';
 @import './componentes/mediaquary.scss';
 @import './componentes/header';
 @import './componentes/nav';
@@ -12,6 +13,7 @@
 @import './componentes/carrera';
 @import './componentes/titulos';
 @import './componentes/career-equipos.scss';
+
 
 html{
     box-sizing: border-box;

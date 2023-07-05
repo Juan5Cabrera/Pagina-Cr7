@@ -7,7 +7,7 @@
   font-family: "Bebas Neue", sans-serif;
 }
 
-.text-portugal, .text-juve, .text-madrid, .text-united, .text-sporting {
+.text-portugal, .text-juve, .text-madrid, .text-united {
   text-align: center;
   margin-right: 60px;
   color: white;
@@ -15,11 +15,27 @@
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
+.img-h {
+  filter: grayscale(80%);
+  transition: filter 0.2s, transform 0.5s;
+  margin-top: 15px;
+}
+
+.img-h:hover {
+  filter: none;
+  transform: scale(1.1);
+}
+
 @media (max-width: 600px) {
   .linea {
     margin-top: 20px;
     margin-bottom: 10px;
     height: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .banner_header {
+    width: 100%;
   }
 }
 header img {
@@ -51,7 +67,6 @@ nav ul li a {
   display: block;
   max-width: 100%;
   height: auto;
-  opacity: 50%;
 }
 
 .texto-encima {
@@ -73,7 +88,7 @@ nav ul li a {
 }
 
 .text_bio2, .text_carrera2, .text_titulos2, .text_records2 {
-  color: white;
+  color: orangered;
   font-size: 20px;
   font-family: "Josefin Slab";
   font-weight: serif;
