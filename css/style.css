@@ -387,6 +387,11 @@ li {
   margin-top: 50px;
 }
 
+@media (max-width: 600px) {
+  .card-info-t {
+    margin: 3px 0;
+  }
+}
 .back:hover {
   color: orangered;
 }
