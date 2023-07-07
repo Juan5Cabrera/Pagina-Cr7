@@ -55,3 +55,9 @@
 .card-t-2{
     margin-top: 50px;
 }
+
+@media (max-width: 600px){
+  .card-info-t{
+    margin: 0px 0;
+  }
+}
