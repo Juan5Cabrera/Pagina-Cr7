@@ -1,31 +1,171 @@
-
-//HOME IMG/TEXT
-.img-position{
-    position: relative;
-    text-align: $centrado;
-        img{
-            display: block;
-            max-width: 100%;
-            height: $auto;
-        }
+.nav{
+	display:block;
+	width:100%; height:100vh;
+	background:#222;
+	overflow:none;
 }
 
-.texto-encima {
-    position: absolute; 
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.nav .container-i{
+        display: $inline;
+        width:25%; height:100%;
+        float: left;
+        background:#222;
+        background-size:cover;
+        background-position:center;
+        transition:all .4s ease-out;
 }
 
-//DISEÑOS TEXTOS
-.text_bio2:hover, .text_carrera2:hover, .text_titulos2:hover, .text_records2:hover{
-    color: $color-ppl;
+.info{
+	position:relative;
+	top:30%;
+	width:80%;
+	height:50%;
+	display:block;
+	margin:0 auto;
 }
 
-//MIXIN
-.text_bio , .text_carrera, .text_titulos, .text_records{
-    @include text-i(white, 50px, 'Oswald', sans-serif);
+
+.title-i{
+	@include text-home(block, 90%, 50px, 50px, center, 0 auto, bold, #efefef, 35px);
+	padding-top: 50%;
 }
-.text_bio2, .text_carrera2, .text_titulos2, .text_records2{
-    @include text-i($color-ppl, 20px, 'Josefin Slab', serif)
+
+.info{
+	strong{
+		@include text-home(block, 90%, 15px, 15px, center, 0 auto, 400, orangered, 15px);
+		font-style: italic; 
+	}
+}
+
+.nav .container-i:nth-child(1){
+	background-image: url("https://i.imgur.com/41Aw49y.jpg");
+	@extend %img-home;
+}
+
+.nav .container-i:nth-child(2){
+	background-image: url("https://i.imgur.com/rgGoqLu.jpg");
+	@extend %img-home;
+}
+
+.nav .container-i:nth-child(3){
+	background-image: url("https://i.imgur.com/bxVjZF3.jpg");
+	@extend %img-home;
+}
+
+.nav .container-i:nth-child(4){
+	background-image: url("https://i.imgur.com/goZ9J8U.jpg");
+	@extend %img-home;
+}
+
+.nav .container-i:hover{
+	background-color:rgba(10,10,10,.4);
+	background-size:cover;
+	transition:all .8s ease-out;
+}
+
+.nav .container-i .info .btn-i{
+	margin:0 auto;
+	width:auto;
+	height:auto;
+	line-height:auto;
+	background:rgba(0,0,0,.5);
+	color: #000;;
+	font-weight:bold;
+	font-size:25px;
+	font-weight:bold;
+	display:block;
+	position:relative;
+	text-align:center;
+	padding:.3em .6em .3em .6em;
+	top:10%;
+	transform: rotate(45deg);
+}
+
+.nav .container-i:hover .btn-i{
+	color:#eeeeee;
+	background:#7b00b5;
+	transform: rotate(0deg);
+	transition:all .8s ease-out;
+}
+
+.nav .container-i .info .btn-i:hover{
+	background:$color-ppl;
+	transition:all .4s ease-out;
+}
+
+
+
+//CUANDO PONGO ESTE MEDIA QUARY EN LA OTRA PAGINA, DEJA D SERVIR LO SIENTO
+
+
+@media all and (min-width: 320px) and (max-width: 767px){
+    .nav .container-i{
+        display: map-get($media-i, mdp-b);
+        width: map-get($media-i, tmn);
+		height: map-get($media-i, alt);
+        background-color: map-get($media-i, bg-cl);
+    }
+    .nav .container-i .info .btn-i:hover{
+        background: $color-ppl;
+        transition: map-get($media-i, transi);
+    }
+        
+    .nav .container-i .info .btn-i{
+        background:map-get($media-i, bg);
+        color:map-get($media-i, clr);
+        transform: map-get($media-i, transf);
+    }
+        
+    .nav .container-i:hover .btn-i{
+        background: map-get($media-i, bg-);
+        transform: map-get($media-i, transf);
+    }
+        
+    .nav .container-i:nth-child(1){background-color: $bg-color;}
+    .nav .container-i:nth-child(2){background-color: $bg-color;}
+    .nav .container-i:nth-child(3){background-color: $bg-color;}
+    .nav .container-i:nth-child(4){background-color: $bg-color;}
+        
+    .info strong{
+     color: $color-ppl;
+    }
+    }
+
+    
+    @media all and (min-width: 768px) and (max-width: 1100px){
+    .nav .container-i{
+        display: inline-block;
+        width: 50%;
+		height: map-get($media-i, alt);
+        background-color: map-get($media-i, bg-cl);
+    }
+    .nav .container-i .info .btn-i:hover{
+        background:$color-ppl;
+        transition: map-get($media-i, transi);
+    }
+        
+    .nav .container-i .info .btn-i{
+        background: map-get($media-i, bg);
+        color:map-get($media-i, clr);
+        transform: map-get($media-i, transf);
+    }
+        
+    .nav .container-i:hover .btn-i{
+        background: map-get($media-i, clr);
+        transform: map-get($media-i, transf);
+    }
+        
+    .nav .container-i:nth-child(1){background-color:$bg-color;}
+    .nav .container-i:nth-child(2){background-color:$bg-color;}
+    .nav .container-i:nth-child(3){background-color: $bg-color;}
+    .nav .container-i:nth-child(4){background-color: $bg-color;}
+    
+    .info{
+        top:0%;
+        height:70%;
+    }
+     
+    .info strong{
+     color: $color-ppl;
+    }
 }

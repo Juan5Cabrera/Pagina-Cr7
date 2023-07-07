@@ -40,22 +40,17 @@
   }
   
   .card-title-t {
-    text-transform: uppercase;
-    font-size: 50px;
-    font-weight: 500;
+    @include card-text(uppercase, 42px, 500);
   }
   
   .card-sub-title-t {
-    text-transform: capitalize;
-    font-size: 14px;
-    font-weight: 300;
+    @include card-text(capitalize, 14px, 300);
   }
   
   .card-info-t {
-    font-size: 16px;
+    @include card-text(none, 16px, 400);
     line-height: 25px;
-    margin: 40px 0;
-    font-weight: 400;
+    margin: 10px 0;
   }
 .card-t-2{
     margin-top: 50px;

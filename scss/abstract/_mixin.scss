@@ -5,3 +5,21 @@
     font-weight: $f-serif;
 }
 
+@mixin text-home($dp-b, $tmn, $min-h, $line-h, $txt-c, $mrg, $f-wei, $color, $f-size,){
+    display: $dp-b;
+    width: $tmn;
+    min-height: $min-h;
+    line-height: $line-h;
+    text-align: $txt-c;
+    margin: $mrg;
+    font-weight: $f-wei;
+    color: $color;
+    font-size: $f-size;
+}
+
+@mixin card-text($txt-trans, $f-size, $f-wei){
+    text-transform: $txt-trans;
+    font-size: $f-size;
+    font-weight: $f-wei;
+}
+

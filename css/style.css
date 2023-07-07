@@ -15,48 +15,9 @@
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
-.galery-home {
-  display: flex;
-  width: 800px;
-  height: 430px;
-  margin: 0 auto;
-}
-
-.galery-img {
-  position: relative;
-  width: 0px;
-  flex-grow: 1;
-  object-fit: cover;
-  filter: grayscale(100%);
-  transition: 0.5s ease-out;
-}
-
-.text-galery {
-  position: absolute;
-  font-size: 60px;
-}
-
-.text-galery2 {
-  position: absolute;
-  font-size: 60px;
-  margin-left: 100px;
-}
-
-.galery-img:hover {
-  width: 150px;
-  opacity: 1;
-  filter: none;
-}
-
-.img-h {
-  filter: grayscale(80%);
-  transition: filter 0.2s, transform 0.5s;
-  margin-top: 15px;
-}
-
-.img-h:hover {
-  filter: none;
-  transform: scale(1.1);
+.nav .container-i:nth-child(4), .nav .container-i:nth-child(3), .nav .container-i:nth-child(2), .nav .container-i:nth-child(1) {
+  background-color: rgba(10, 10, 10, 0.9);
+  background-blend-mode: overlay;
 }
 
 @media (max-width: 600px) {
@@ -71,6 +32,17 @@
     width: 100%;
   }
 }
+.img-h {
+  filter: grayscale(80%);
+  transition: filter 0.2s, transform 0.5s;
+  margin-top: 15px;
+}
+
+.img-h:hover {
+  filter: none;
+  transform: scale(1.1);
+}
+
 header img {
   width: 100%;
 }
@@ -83,7 +55,7 @@ header img {
   width: auto;
 }
 
-nav ul li a {
+nav .nav-page .nav-li .nav-a {
   opacity: 70%;
 }
 
@@ -92,41 +64,186 @@ nav ul li a {
   color: black;
 }
 
-.img-position {
+.nav {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background: #222;
+  overflow: none;
+}
+
+.nav .container-i {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  float: left;
+  background: #222;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease-out;
+}
+
+.info {
+  position: relative;
+  top: 30%;
+  width: 80%;
+  height: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.title-i {
+  display: block;
+  width: 90%;
+  min-height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+  color: #efefef;
+  font-size: 35px;
+  padding-top: 50%;
+}
+
+.info strong {
+  display: block;
+  width: 90%;
+  min-height: 15px;
+  line-height: 15px;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 400;
+  color: orangered;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.nav .container-i:nth-child(1) {
+  background-image: url("https://i.imgur.com/41Aw49y.jpg");
+}
+
+.nav .container-i:nth-child(2) {
+  background-image: url("https://i.imgur.com/rgGoqLu.jpg");
+}
+
+.nav .container-i:nth-child(3) {
+  background-image: url("https://i.imgur.com/bxVjZF3.jpg");
+}
+
+.nav .container-i:nth-child(4) {
+  background-image: url("https://i.imgur.com/goZ9J8U.jpg");
+}
+
+.nav .container-i:hover {
+  background-color: rgba(10, 10, 10, 0.4);
+  background-size: cover;
+  transition: all 0.8s ease-out;
+}
+
+.nav .container-i .info .btn-i {
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  line-height: auto;
+  background: rgba(0, 0, 0, 0.5);
+  color: #000;
+  font-weight: bold;
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
   position: relative;
   text-align: center;
-}
-.img-position img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  padding: 0.3em 0.6em 0.3em 0.6em;
+  top: 10%;
+  transform: rotate(45deg);
 }
 
-.texto-encima {
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.nav .container-i:hover .btn-i {
+  color: #eeeeee;
+  background: #7b00b5;
+  transform: rotate(0deg);
+  transition: all 0.8s ease-out;
 }
 
-.text_bio2:hover, .text_carrera2:hover, .text_titulos2:hover, .text_records2:hover {
-  color: orangered;
+.nav .container-i .info .btn-i:hover {
+  background: orangered;
+  transition: all 0.4s ease-out;
 }
 
-.text_bio, .text_carrera, .text_titulos, .text_records {
-  color: white;
-  font-size: 50px;
-  font-family: "Oswald";
-  font-weight: sans-serif;
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .nav .container-i {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.2);
+  }
+  .nav .container-i .info .btn-i:hover {
+    background: orangered;
+    transition: all 0.1s;
+  }
+  .nav .container-i .info .btn-i {
+    background: #009999;
+    color: #ffffff;
+    transform: rotate(0deg);
+  }
+  .nav .container-i:hover .btn-i {
+    transform: rotate(0deg);
+  }
+  .nav .container-i:nth-child(1) {
+    background-color: rgba(10, 10, 10, 0.767);
+  }
+  .nav .container-i:nth-child(2) {
+    background-color: rgba(10, 10, 10, 0.767);
+  }
+  .nav .container-i:nth-child(3) {
+    background-color: rgba(10, 10, 10, 0.767);
+  }
+  .nav .container-i:nth-child(4) {
+    background-color: rgba(10, 10, 10, 0.767);
+  }
+  .info strong {
+    color: orangered;
+  }
 }
-
-.text_bio2, .text_carrera2, .text_titulos2, .text_records2 {
-  color: orangered;
-  font-size: 20px;
-  font-family: "Josefin Slab";
-  font-weight: serif;
+@media all and (min-width: 768px) and (max-width: 1100px) {
+  .nav .container-i {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.2);
+  }
+  .nav .container-i .info .btn-i:hover {
+    background: orangered;
+    transition: all 0.1s;
+  }
+  .nav .container-i .info .btn-i {
+    background: #009999;
+    color: #ffffff;
+    transform: rotate(0deg);
+  }
+  .nav .container-i:hover .btn-i {
+    background: #ffffff;
+    transform: rotate(0deg);
+  }
+  .nav .container-i:nth-child(1) {
+    background-color: rgba(10, 10, 10, 0.767);
+  }
+  .nav .container-i:nth-child(2) {
+    background-color: rgba(10, 10, 10, 0.767);
+  }
+  .nav .container-i:nth-child(3) {
+    background-color: rgba(10, 10, 10, 0.767);
+  }
+  .nav .container-i:nth-child(4) {
+    background-color: rgba(10, 10, 10, 0.767);
+  }
+  .info {
+    top: 0%;
+    height: 70%;
+  }
+  .info strong {
+    color: orangered;
+  }
 }
-
 .linea {
   width: 100%;
   height: 5px;
@@ -248,7 +365,7 @@ li {
 
 .card-title-t {
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 42px;
   font-weight: 500;
 }
 
@@ -259,10 +376,11 @@ li {
 }
 
 .card-info-t {
+  text-transform: none;
   font-size: 16px;
-  line-height: 25px;
-  margin: 40px 0;
   font-weight: 400;
+  line-height: 25px;
+  margin: 10px 0;
 }
 
 .card-t-2 {
