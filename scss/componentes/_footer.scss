@@ -8,6 +8,7 @@
 .video_siu {
     margin-left: $auto;
     margin-right: $auto;
+    margin-top: 70px;
 }
 li {
     display: $inline;
@@ -23,5 +24,23 @@ li {
 .card-footer{
     text-align: $centrado;
 }
+
+.form{
+    width: 500px;
+    margin-bottom: 40px;
+}
+
+.text-form{
+    text-align: center;
+    color: white;
+}
+.text-form2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: $color-ppl;
+}
+
+
 
   

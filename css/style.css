@@ -255,6 +255,7 @@ nav .nav-page .nav-li .nav-a {
 .video_siu {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 70px;
 }
 
 li {
@@ -273,6 +274,23 @@ li {
 
 .card-footer {
   text-align: center;
+}
+
+.form {
+  width: 500px;
+  margin-bottom: 40px;
+}
+
+.text-form {
+  text-align: center;
+  color: white;
+}
+
+.text-form2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: orangered;
 }
 
 .carru_bio {
@@ -389,7 +407,7 @@ li {
 
 @media (max-width: 600px) {
   .card-info-t {
-    margin: 3px 0;
+    margin: 2px 0;
   }
 }
 .back:hover {
